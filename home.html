@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="home.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <a href="#"><img src="Images/Aespa_logo-removebg-preview.png" class="aespalogo"></a>
+
+    <nav class="menu">
+      <a href="#" class="home">HOME</a>
+      <a href="#" class="albums">ALBUMS</a>
+      <a href="#" class="merch">MERCH</a>
+      <a href="#" class="tour">TOUR</a>
+    </nav>
+
+  </header>
+
+  <br>
+
+  <div>
+    <img src="Images/aespablulogo.png" class="fmlogo">
+  </div>
+  <hr>
+  <h1 class="h1alb">ALBUMS</h1>
+
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 7</div>
+      <img src="Images/savagealb.jpg" style="width: 50%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 7</div>
+      <img src="Images/aespa_Girls_Digital-Cover.jpg" style="width: 50%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 7</div>
+      <img src="Images/myworldalb.jpg" style="width: 50%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 7</div>
+      <img src="Images/blackmambaalb.png" style="width: 50%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 7</div>
+      <img src="Images/nextlevelalv.png" style="width: 50%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">6 / 7</div>
+      <img src="Images/dctalb.png" style="width: 50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 7</div>
+      <img src="Images/foreveralb.png" style="width: 50%">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="Images/savagealb.jpg" style="width: 100%" onclick="currentSlide(1)" alt="SAVAGE - 1ST MINI ALBUM">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/aespa_Girls_Digital-Cover.jpg" style="width: 100%" onclick="currentSlide(2)" alt="GIRLS - 2ND MINI ALBUM">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/myworldalb.jpg" style="width: 100%" onclick="currentSlide(3)" alt="MY WORLD - 3RD MINI ALBUM">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/blackmambaalb.png" style="width: 100%" onclick="currentSlide(4)" alt="BLACK MAMBA">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/nextlevelalv.png" style="width: 100%" onclick="currentSlide(5)" alt="NEXT LEVEL">
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="Images/dctalb.png" style="width: 100%" onclick="currentSlide(6)" alt="DREAMS COME TRUE">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/foreveralb.png" style="width: 100%" onclick="currentSlide(7)" alt="FOREVER">
+      </div>
+    </div>
+  </div>
+
+    <script>
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+
+<hr>
+<h1 class="h1merch">MERCH</h1>
+
+<div class="merch1">
+  <img src="Images/album1ae.jpg" alt="" class="merchs">
+  <img src="Images/alum2ae.jpg" alt="" class="merchs">
+  <img src="Images/album3ae.jpg" alt="" class="merchs">
+</div>
+
+</body>
+</html>

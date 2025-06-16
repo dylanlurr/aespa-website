@@ -1,0 +1,195 @@
+html{
+    background-color: black;
+}
+.menu{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-right: 67px;
+    /* transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+}
+.home:hover{
+    transition: transform 0.3s, color 0.3s;
+    transform: translateY(-3px);
+    color: white;
+}
+.albums:hover{
+    transition: transform 0.3s, color 0.3s;
+    transform: translateY(-3px);
+    color: white;
+}
+.merch:hover{
+    transition: transform 0.3s, color 0.3s;
+    transform: translateY(-3px);
+    color: white;
+}
+.tour:hover{
+    transition: transform 0.3s, color 0.3s;
+    transform: translateY(-3px);
+    color: white;
+}
+.menu a{
+    margin-left: 35px;
+    text-decoration: none;
+    color: #9EC4C9;
+}
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aespalogo{
+    padding-left: 40px;
+    width: 50%;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.fmlogo{
+    margin-top: 8%;
+    margin-bottom: 18%;
+    margin-left: 25%;
+    width: 50%;
+    animation : fadeIn 3.5s;
+}
+
+hr{
+    width: 90%;
+    color: #9EC4C9;
+}
+
+.h1alb{
+    color: #9EC4C9;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.h1merch{
+    color: #9EC4C9;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    margin-bottom: 100px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    margin-left: 483px;
+    margin-bottom: 10px;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color:#222;
+    padding: 0.01% 16%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 14.285%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.5;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .merch1{
+    text-align: center;
+  }
+  
+  .merchs{
+    width: 30%;
+  }
+
